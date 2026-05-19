@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>美德闯关赛｜AI助教讲解系统</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1><i class="fas fa-crown"></i> 美德闯关赛</h1>
+    <p>5道选择题 · 提交后调用 DeepSeek AI 生成个性化讲解</p>
+  </div>
+
+  <div class="quiz-section" id="quizArea"></div>
+
+  <div class="btn-group">
+    <button id="submitBtn">
+      <i class="fas fa-check-circle"></i> 提交答案
+    </button>
+    <button id="resetBtn" class="secondary">
+      <i class="fas fa-rotate"></i> 重新开始
+    </button>
+  </div>
+
+  <div class="result-box" id="resultBox">
+    <div class="score-display" id="scoreText">请完成答题</div>
+    <div class="wrong-list" id="wrongList"></div>
+
+    <div class="ai-comment">
+      <i class="fas fa-robot"></i>
+      <strong>AI助教提示：</strong>
+      本系统已接入 DeepSeek API，为你生成符合初中生认知水平的错题讲解。讲解内容紧扣课标，联系生活实际，助力“知—情—意—行”统一。
+    </div>
+  </div>
+
+  <div class="footer-note">
+    © 2025 初中道法数字课堂｜部署于 Netlify｜图片请置于 <code>img/q5.jpg</code>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
